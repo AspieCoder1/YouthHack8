@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.vent {
+  position: absolute;
+  bottom: 335px;
+  left: 115px;
+}
+
+.relax {
+  position: absolute;
+  bottom: 360px;
+  left: 400px;
+}
+
+.game {
+  position: absolute;
+  bottom: 345px;
+  right: 605px;
+}
+
+.advice {
+  position: absolute;
+  bottom: 370px;
+  right: 345px;
+}
+
+.gethelp {
+  position: absolute;
+  bottom: 335px;
+  right: 115px;
+}
+
+  
+body, html {
+  height: 98.5%;
+  margin: 1;
+}
+
+.bg {
+  background-image: url("../assets/images/homepage_background.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

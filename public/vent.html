@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="background"></div>
+  <h1>Vent Wall!!</h1>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/vent">Vent Wall</a>
+    <a href="/relax">Relax</a>
+    <a href="/game">Game</a>
+    <a href="/advice">Advice</a>
+    <a href="/help">Get Help</a>
+  </nav>
+  <div class="wrap">
+    <ul id="vents"></ul>
+    <div id="ventForm">
+        <button id="removeVents">Let your anger drain away...</button>
+        <form id="vent-form">
+          <input name="ventTextBox" type="text" placeholder="Message" autofocus autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+    </div>
+  </div>  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/js/libs/mustache.min.js"></script>
+  <script src="/js/vent.js"></script>
+  <script id="vent-template" type="text\template">
+    <li class="vent"><h4>{{vent}}</h4></li>
+  </script>
+</body>
+<footer>
+  <p>&copy; The Hallway, 2018</p>
+</footer>
+</html>

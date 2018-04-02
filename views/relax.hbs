@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Document</title>
+</head>
+<body>
+  <h1>And Relax...</h1>
+  {{> header}}
+  </script>
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="/assets/images/3.jpg" style="width:60%" style="height:60%" background-position: "center"; background-repeat: "no-repeat"; background-size: "cover">
+    <img class="mySlides" src="/assets/images/cat.gif" style="width:60%" >
+    <img class="mySlides" src="/assets/images/nature2.gif" style="width:60%" style="height:60%" >
+    <img class="mySlides" src="/assets/images/shape.gif" style="width:550px" style="height: 550px" >
+    <iframe width="100" height="100" src="https://www.youtube.com/embed/Qm846KdZN_c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="100" height="100" src="https://www.youtube.com/embed/EhO_MrRfftU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="100" height="100" src="https://www.youtube.com/embed/q2fIWB8o-bs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+</body>
+</html>
