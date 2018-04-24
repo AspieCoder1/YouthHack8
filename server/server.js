@@ -12,7 +12,7 @@ app.use('/styles', express.static(path.join(__dirname, '../styles')));
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
-  res.render('index.hbs');
+  res.render('index');
 });
 
 app.get('/vent', (req, res) => {
@@ -20,19 +20,19 @@ app.get('/vent', (req, res) => {
 });
 
 app.get('/relax', (req, res) => {
-  res.render('relax.hbs');
+  res.render('relax');
 });
 
 app.get('/game', (req, res) => {
-  res.render('game.hbs');
+  res.render('game');
 });
 
 app.get('/advice', (req, res) => {
-  res.render('advice.hbs');
+  res.render('advice');
 });
 
 app.get('/help', (req, res) => {
-  res.render('help.hbs');
+  res.render('help');
 });
 
 app.listen(3000, () => {
