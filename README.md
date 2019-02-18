@@ -6,6 +6,15 @@ Mental health in young people is an extremely big problem as in the UK 40% of al
 
 We aimed to change this by creating an web app that allowed us to raise awareness of mental health of young people. This app was created at the Youth Hack #8, part of the HacManchester program, we entered this app for the federation challenge which was: `to create a digital solution for social challanges faced by people in the North of England and the UK as a whole`, a challange that we ended up winning with this solution.
 
+## Technology used
+* Node.js
+* HandlebarsJS
+* CSS
+* HTML
+
+## Planned upgrades
+* verson two will eventually be converted to a react app when I get arround to it, because React is cool and I have other project that I need to complete and work on.
+
 ## Requirements
 
 * Node.js
